@@ -10,6 +10,7 @@ function Cliente (nome, cpf, email, saldo) {
    const andre = new Cliente("Andre", "12312312312", "andre@email.com", 100)
 
    function ClientePoupanca(nome, cpf, email, saldo, saldoPoup){
+     //chamando o objeto cliente
     Cliente.call(this, nome, cpf, email, saldo)
     this.saldoPoup = saldoPoup
    }
@@ -18,7 +19,7 @@ function Cliente (nome, cpf, email, saldo) {
     this.saldoPoup += valor
    }
 
-   console.log(andre.hasOwnProperty("saldoPoup"))
+console.log(andre.hasOwnProperty("saldoPoup"))
 console.log(ju.hasOwnProperty("saldoPoup"))
 console.log(andre instanceof Cliente)
 console.log(typeof andre)
