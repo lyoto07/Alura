@@ -8,6 +8,6 @@ for(var i = 0; i < notas.length;i++){
     soma+=notas[i];
     media = soma / notas.length;
 }
-
+//teste
 console.log(media);
 
