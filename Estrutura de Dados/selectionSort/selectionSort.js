@@ -1,4 +1,4 @@
-const livros = require('./listaLivros.js')
+const livros = require('../inserction/listaLivros.js')
 const menorValor = require('./menorValor')
 
 for(let atual = 0; atual < livros.length - 1; atual++){
