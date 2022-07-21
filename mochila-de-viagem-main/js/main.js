@@ -1,15 +1,17 @@
 const form = document.getElementById("novoItem");
 const lista = document.querySelector("#lista");
 
-
                                 //é so o parametro
 form.addEventListener('submit', (evento) =>{
     //os dados estão sendo enviados para a propria pagina por isso é preciso interromper o comportamento padrão, 
     evento.preventDefault();
+
     //traz um objeto com tudo que esta rodando
     //console.log(evento);
-    //froma mais direta, vai no objeto e pega o array em uma posição x (na posição 0 é o nome e na posição 1 a quantidade) porem é uma forma fixa
+
+    //forma mais direta, vai no objeto e pega o array em uma posição x (na posição 0 é o nome e na posição 1 a quantidade) porem é uma forma fixa
    // console.log(evento.target[1].value);
+
     // uma forma dinamica de pegar os dados do input / por ser input se passa value
     // console.log(evento.target.elements['nome'].value);
     // console.log(evento.target.elements['quantidade'].value);
@@ -37,4 +39,4 @@ function criaElemento(nome, quantidade){
     novoItem.innerHTML += nome;
 
     lista.appendChild(novoItem);
-}
+} 
